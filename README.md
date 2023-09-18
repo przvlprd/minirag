@@ -86,6 +86,8 @@ gpu parameters
 
 ## Usage
 
+- every time you run the file, the raw document gets chunked and embedded 
+  first, which may take some time
 - run the `main.py` and you will be prompted for input
   ```
   python main.py
@@ -99,6 +101,7 @@ gpu parameters
 **ToDo**s
 
 - stream output
+  - only print the relevant messages, not verbose
 - separate embedding from query function
   - **do not load model twice per run!**
   - embed once, save & load `chromadb` instance
