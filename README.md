@@ -96,7 +96,22 @@ gpu parameters
 
 ## Roadmap
 
+**ToDo**s
+
+- stream output
+- separate embedding from query function
+  - **do not load model twice per run!**
+  - embed once, save & load `chromadb` instance
+  - keep persistent memory
+    - do not embed same documents multiple times
+    - only new documents / changes in existing documents
 - add other document formats and loaders (PDF, csv, images?)
-- keep persistent memory, do not embed documents multiple times
-- test performance with different models
+  - use different `text_splitter`
+    - try different `chunk_size`, `chunk_overlap`
 - keep chat history as context
+- test performance with different settings
+  - different models
+    - parameter size 7b/13b, base/chat/uncensored
+  - different prompts
+    - different models require different templates
+      - see corresponding HuggingFace page for model
