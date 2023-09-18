@@ -32,7 +32,7 @@ loader = TextLoader("docs/raw.txt",  encoding='utf-8')
 docs = loader.load()
 
 # Transform into chunks
-text_splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=20)
+text_splitter = CharacterTextSplitter(chunk_size=600, chunk_overlap=20)
 texts = text_splitter.split_documents(docs)
 
 # Create a chroma vectorstore from a list of documents
