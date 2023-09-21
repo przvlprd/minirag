@@ -66,6 +66,7 @@ Note: when setting up `LlamaCpp-Python` check `--verbose` flag to see if
 Setup may succeed even if there are errors with Cuda - then only CPU support will be enabled
 
 [Failed GPU Setup, only CPU available](https://github.com/imartinez/privateGPT/issues/885#issuecomment-1646752174)
+[Instructions for GPU Support in llama.cpp](https://github.com/oobabooga/text-generation-webui/discussions/1984)
 
 ### Modify `constants`
 
