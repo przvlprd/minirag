@@ -39,6 +39,7 @@ A proof-of-concept Retrieval Augmented Generation (RAG) bot using Llama2.
 
 - install `CUDA` on your system according to [Official Docs](https://docs.nvidia.com/cuda/wsl-user-guide/index.html)
   ```
+  # Linux
   sudo apt install nvidia-cuda-toolkit
   ```
 
@@ -47,6 +48,10 @@ A proof-of-concept Retrieval Augmented Generation (RAG) bot using Llama2.
   # Windows
   set CMAKE_ARGS="-DLLAMA_CUBLAS=on"
   set FORCE_CMAKE=1
+  # PowerShell
+  $env:FORCE_CMAKE=1
+  $env:CMAKE_ARGS="-DLLAMA_CUBLAS=on"
+  pip install llama-cpp-python --force-reinstall --upgrade --no-cache-dir
   
   # Linux
   CMAKE_ARGS="-DLLAMA_CUBLAS=on"

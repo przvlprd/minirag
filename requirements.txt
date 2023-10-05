@@ -1,3 +1,3 @@
 llama-cpp-python
-langchain[llms]
+langchain
 chromadb
